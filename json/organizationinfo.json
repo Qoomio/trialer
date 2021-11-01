@@ -1,0 +1,37 @@
+{
+	"fullName": "Qoom"
+	, "name" : "Qoom"
+	, "contactEmail" : "hello@qoom.io"
+	, "senderEmail" : "hello@qoom.io"
+	
+	, "logo" : "trialer/qoom.svg"
+	, "favIcon" : "trialer/favicon.png"
+	, "primaryColor" : "#0067f4"
+	
+	, "welcomeEmail" : {
+		"subject" : "Your coding space information"
+		, "template" : "trialer/emails/trial-starts.email"
+	}
+	
+	, "welcomeEmailNoPassword" : {
+		"subject" : "Your coding space information"
+		, "template" : "trialer/emails/new-account-created.email" 
+	}
+	
+	, "remindingEmail" : {
+		"subject" : "Reminder: Your starter plan expires soon"
+		, "template" : "trialer/emails/starter-ending-soon.email"
+	}
+	
+	, "trialEndEmail" : {
+		"subject" : "Your starter plan just ended"
+		, "template" : "trialer/emails/trial-expired.email"
+	}
+	
+	, "resetPasswordEmail" : {
+		"subject" : "Reset your Coding Space Password"
+		, "template" : "trialer/emails/forgotemailtemplate.html"
+	}
+	
+	, "productName" : "Free"
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Qoom Coding Space</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="/libs/administrater/css/qoom.css">
+		<link rel="stylesheet" href="/libs/icons/icons.css">
+		<style>
+			body {
+				display: grid;
+			}
+			body > div {
+				max-width: 640px;
+				padding: 24px;
+				text-align: center;
+				place-self: center;
+			}
+			h4 {
+				color: #111559;
+				font-weight: 300;
+			}
+			p {
+				margin-top: 1rem;
+				color: #111559;
+				font-weight: 300;
+			}
+			.qoom-main-btn {
+				margin: 24px auto 0;
+				min-width: 320px;
+				font-weight: 400;
+				font-size: 18px;
+				text-transform: uppercase;
+			}
+			.ghost {
+				position: relative;
+				font-size: 120px;
+				animation: swing 1s ease-in-out 1s infinite alternate;
+				transform-origin: center -360px;
+			}
+			@keyframes swing {
+			    0% { transform: rotate(5deg); }
+			    100% { transform: rotate(-5deg); }
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<div class="image">
+				<div class="ghost">👻</div>
+			</div>
+			<h4>This URL does not exist. Sorry about that.</h4>
+			<h4>Did you want to create a web app?</h4>
+			<a href="https://www.qoom.io"><div class="qoom-main-btn qoom-button-full">Try Qoom Now</div></a>
+			<p>If you need any help, please contact us at <a href="maileto:hello@qoom.io">hello@qoom.io</a></p>
+		</div>
+	</body>
+</html>

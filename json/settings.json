@@ -1,0 +1,42 @@
+{
+	"emailInputModal" : {
+		"show": true
+		, "titleText" : "Enter Your Email"
+		, "cancelBtnText": "cancel"
+		, "submitBtnText" : "start"
+	},
+	
+	"welcomeModal" : {
+		"show": true
+		, "titleText" : "🚀 Welcome to Qoom "
+		, "submitBtnText" : "OK"
+	}, 
+	
+	"trialEndModal" : {
+		"show": true
+		, "titleText" : "Your Account Deactivated"
+	}, 
+	
+	"upgradeSnackbar" : {
+		"message": "⚡️ Your trial expires in ${remainingDays} ${ remainingDays > 1 ? 'days' : 'day'}."
+		, "action1Text": "Hide"
+		, "action2Text" : "Upgrade"
+	},
+	
+	"upgradeButton" : {
+		"show": true
+		, "message": "😎 Upgrade"
+	},
+
+
+	"redirectingPage" : {
+		"url": "https://${domainToTrial}/explore"
+	},
+	
+	"ghostPageAfterExpiration" : true,
+	
+	"showQoomOTW": true,
+	
+	"upgradeBtnURL": "https://{{qoomStationDomain}}/account/myplans?codingspace={{domain}}"
+
+}

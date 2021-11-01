@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>🏡 Welcome Home</title>
+		<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap" rel="stylesheet">
+		<style>
+			body {
+				background-color: #212121;
+				color: #fff;
+				font-family: 'Fira Code', monospace;
+				line-height: 1.5;
+				margin: 0;
+			}
+			body > div {
+				position: absolute;
+				padding: 24px 48px;
+				border-radius: 16px;
+				background-color: rgba(255,255,255,0.08);
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				max-width: 760px;
+			}
+			p {
+				margin: 24px 0;
+				width: 100%;
+			}
+			span {
+				color: orange;
+			}
+			a, a:visited {
+				color: deepskyblue;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<p>👋 Hi! This is your home.</p>
+			<p>🏡 Your homepage file is at <a class="domain" href="/home.html" target="_blank">/home.html</a>
+			<br>✏️ To edit it, go to <a class="domain" href="/edit/home.html" target="_blank">/edit/home.html</a></p>
+			<p>To access all files in your coding space, go to the admin page at <a class="domain" href="/admin" target="_blank">/admin</a></p>
+			<p>Enjoy coding with Qoom!</p>
+			<p>The Qoom Team<br><span>hello@qoom.io</span></p>
+		</div>
+		<script>
+			let links = document.querySelectorAll('.domain');
+			links.forEach(link => {
+				if(link.href.trim().startsWith('/')) link.href = location.origin + link.href;
+				if(link.innerHTML.trim().startsWith('/')) link.innerHTML = location.origin + link.innerHTML;
+			})
+		</script>
+	</body>
+</html>

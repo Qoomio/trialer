@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="/libs/administrater/css/qoom.css">
+		<link rel="stylesheet" type="text/css" href="/libs/icons/icons.css">
+		<style>   
+			body {
+				margin:0;
+				overflow: hidden;
+			}
+			iframe {
+				width:100vw;
+				height:100vh;
+				border:none;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<iframe src='{{URL}}'></iframe>
+		<div id="qoomSticker" class="qoom-sticker">
+			<div>This app was created with <i class="ic-qoom"></i></div> 
+			<div>Qoom is a coding platform for people to want to build web applications on their own creative space.</div>
+			<div>For more details, visit <span><a href="www.qoom.io">www.qoom.io</a></span></div>
+			<div><a class="btn" href="/trial/domain" target="_blank">Try Qoom Free</a></div>
+		</div>
+	<script>
+		window.addEventListener('load', (event) => {
+			let $iframe = document.querySelector('iframe');
+			let $originalTitle = $iframe.contentWindow.document.querySelector('title');
+			let $scripts = $iframe.contentWindow.document.querySelectorAll('script');
+			
+			if($originalTitle) {
+				let $title = document.createElement('title');
+				$title.innerText = $originalTitle.innerText;
+				document.querySelector('head').appendChild($title);
+			}
+			
+			if($scripts.length >= 1) {
+				$scripts.forEach($script => {
+					var $newScript = document.createElement('script');
+					$newScript.innerHTML = $script.innerHTML;
+					document.body.appendChild($newScript);
+				})
+			}
+		});
+	</script>
+	</body>
+</html>
